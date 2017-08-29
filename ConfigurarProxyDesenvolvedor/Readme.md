@@ -1,5 +1,5 @@
 # Proxy Corporativo para Linguagens de Programaçao
-## Configurando o proxy para ferramentas de linguagens de programaçao OpenSource, especialmente quando voce eh um cara macho e nao usa IDEs.
+Configurando o proxy para ferramentas de linguagens de programaçao OpenSource, especialmente quando voce eh um cara macho e nao usa IDEs.
 
 # Introduçao
 
@@ -10,4 +10,4 @@
 # Python
 
 # Referencias Bibliograficas
-[JHipster](http://www.jhipster.tech/configuring-a-corporate-proxy/)
+[JHipster - http://www.jhipster.tech/configuring-a-corporate-proxy/](http://www.jhipster.tech/configuring-a-corporate-proxy/)
