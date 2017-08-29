@@ -3,6 +3,8 @@ Configurando o proxy para ferramentas de linguagens de programaçao OpenSource, 
 
 # 0. Introduçao
 
+
+
 # 1. JAVA
 
 # 2. Frameworks JavaScripts
