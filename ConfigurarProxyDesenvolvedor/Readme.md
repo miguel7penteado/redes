@@ -2,8 +2,11 @@
 Configurando o proxy para ferramentas de linguagens de programaçao OpenSource, especialmente quando voce eh um cara macho e nao usa IDEs.
 
 # 0. Introduçao
-
-
+Normalmente, as aplicaçoes oriundas do Linux (talvez seja uma pratica em todo universo POSIX) procuram o caminho do proxy em 3 **variaves de ambiente** definidas previamente no shell que ira executar a ferramenta:
+* 1. 'HTTP_PROXY' - Caminho do proxy utilizado em chamdas via protocolo **http**.
+* 2. 'HTTPS_PROXY' - Caminho do proxy utilizado em chamdas via protocolo **https**.
+* 3. 'FTP_PROXY' - Caminho do proxy utilizado em chamdas via protocolo **ftp**.
+Mas com o advento de linguagens que acompanham um frameworks e suas ferramentas, tais como java, javascript e python, a forma de definir o endereço de um servidor proxy ficou relativa a cada uma delas. A seguir temos um resumo.
 
 # 1. JAVA
 ## 1.0 Ferramenta Maven
