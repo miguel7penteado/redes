@@ -11,15 +11,15 @@
 
 ### 3. Governança
 
-### 4. Endereços e plano de endereçamento
+### 4. Endereços e Plano de Endereçamento
 
-### 5. Introdução ao roteamento
+### 5. Introdução ao Roteamento
 
-### 6. Boas práticas para o roteamento
+### 6. Boas Práticas para o Roteamento
 
-### 7. Tópicos avançados de roteamento
+### 7. Tópicos Avançados de Roteamento
 
-### 8. Gerenciamento de redes
+### 8. Gerenciamento de Redes
 
 ### 9. Segurança
 
