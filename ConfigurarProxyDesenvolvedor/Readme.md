@@ -59,10 +59,21 @@ https_proxy=http://nome_usuario:senha@endereco_ip:porta
 ```
 
 ## 2.1 Ferramenta yarn
-
+Para fazer a ferramenta 'yarn' ir buscar pacotes na internet atraves de um proxy, use a seguinte linha de comando:
+```bash
+yarn config set proxy http://nome_usuario:senha@endereco_ip:porta
+yarn config set https-proxy http://nome_usuario:senha@endereco_ip:porta
+```
 
 # 3. Python
 ## 3.1 Ferramenta pip
+Para fazer a ferramenta 'pip' buscar modulos python na internet atraves de um proxy, utilize a sguinte linha de comando:
+```bash
+#para http
+python -m pip install --proxy http://nome_usuario:senha@endereco_ip:porta numpy
+# para https
+python -m pip install --proxy https://nome_usuario:senha@endereco_ip:porta numpy
+```
 
 # 4. GIT
 Voce pode definir o endereço de proxy para a ferramenta git a partir da linha de comando.
