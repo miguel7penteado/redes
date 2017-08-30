@@ -80,7 +80,7 @@ python -m pip install --proxy http://nome_usuario:senha@endereco_ip:porta numpy
 python -m pip install --proxy https://nome_usuario:senha@endereco_ip:porta numpy
 ```
 
-# 4. Ferramentas autonomas ou nao relacionadas a framewor ou linuguagem especifica
+# 4. Ferramentas autonomas ou nao relacionadas a um Framework ou linuguagem especificos
 ### 4.1 GIT
 Voce pode definir o endereço de proxy para a ferramenta git a partir da linha de comando.
 ```bash
