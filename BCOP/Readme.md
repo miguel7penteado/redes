@@ -2,7 +2,10 @@
 ### Curso de Boas Praticas Operacionais para Sistemas Autonomos
 
 ### 1. Bem vindos ao Curso de BCP para Sistemas Autônomos!!!
-* - 1. teste
+
+* - 1. [Site do treinamento](http://moodle.saladeaula.nic.br/mod/url/view.php?id=1001)
+* - 2. [O curso](http://moodle.saladeaula.nic.br/mod/resource/view.php?id=1206)
+
 
 ### 2. Introdução à Internet e aos Sistemas Autônomos
 
