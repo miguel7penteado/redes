@@ -3,15 +3,15 @@ Configurando o proxy para ferramentas de linguagens de programaçao OpenSource, 
 
 # 0. Introduçao
 Normalmente, as aplicaçoes oriundas do Linux (talvez seja uma pratica em todo universo POSIX) procuram o caminho do proxy em 3 **variaves de ambiente** definidas previamente no shell que ira executar a ferramenta:
-* 1. 'HTTP_PROXY' - Caminho do proxy utilizado em chamdas via protocolo **http**.
-* 2. 'HTTPS_PROXY' - Caminho do proxy utilizado em chamdas via protocolo **https**.
-* 3. 'FTP_PROXY' - Caminho do proxy utilizado em chamdas via protocolo **ftp**.
+* 1. `HTTP_PROXY` - Caminho do proxy utilizado em chamdas via protocolo **http**.
+* 2. `HTTPS_PROXY` - Caminho do proxy utilizado em chamdas via protocolo **https**.
+* 3. `FTP_PROXY` - Caminho do proxy utilizado em chamdas via protocolo **ftp**.
 
 Mas com o advento de linguagens que acompanham um frameworks e suas ferramentas, tais como java, javascript e python, a forma de definir o endereço de um servidor proxy ficou relativa a cada uma delas. A seguir temos um resumo.
 
 # 1. JAVA
 ### 1.0 Ferramenta Maven
-Para fazer o 'maven' sair pela internet atraves de um proxy, va ate o diretorio do usuario e coloque as seguintes configuraçoes no arquivo '~/.m2/settings.xml'
+Para fazer o `maven` sair pela internet atraves de um proxy, va ate o diretorio do usuario e coloque as seguintes configuraçoes no arquivo `~/.m2/settings.xml`:
 ```xml
 <proxies>
     <proxy>
@@ -27,7 +27,7 @@ Para fazer o 'maven' sair pela internet atraves de um proxy, va ate o diretorio 
 </proxies>
 ```
 ### 1.1 Ferramenta Gradle
-Para fazer o 'gradle' sair para internet atraves de um proxy, va ate o diretorio do usuario e coloque as seguintes configuraçoes no arquivo '~/.gradle/gradle.properties'
+Para fazer o `gradle` sair para internet atraves de um proxy, va ate o diretorio do usuario e coloque as seguintes configuraçoes no arquivo `~/.gradle/gradle.properties`
 ```bash
 ## Proxy setup
 systemProp.proxySet="true"
@@ -49,9 +49,9 @@ systemProp.https.nonProxyHosts=local.net|some.host.com
 
 
 # 2. Framework JavaScripts NODE.js
-O framework 'Node.js' possui uma ferramenta de gestao de modulos chamada NPM (Node Package Manager) que acessa a internet para baixar versoes recentes de modulos, como eh o caso, por exemplo do React Native. Segue a forma de configurar o endereço de um servidor proxy para essa ferramenta acessar a internet.
+O framework `Node.js` possui uma ferramenta de gestao de modulos chamada NPM (Node Package Manager) que acessa a internet para baixar versoes recentes de modulos, como eh o caso, por exemplo do React Native. Segue a forma de configurar o endereço de um servidor proxy para essa ferramenta acessar a internet.
 ### 2.0 Ferramenta NPM
-Voce pode definir o endereço de proxy para a ferramenta 'NPM' a partir da linha de comando.
+Voce pode definir o endereço de proxy para a ferramenta `NPM` a partir da linha de comando.
 ```bash
 npm config set proxy http://nome_usuario:senha@endereco_ip:porta
 npm config set https-proxy http://nome_usuario:senha@endereco_ip:porta
@@ -64,7 +64,7 @@ https_proxy=http://nome_usuario:senha@endereco_ip:porta
 ```
 
 ### 2.1 Ferramenta yarn
-Para fazer a ferramenta 'yarn' ir buscar pacotes na internet atraves de um proxy, use a seguinte linha de comando:
+Para fazer a ferramenta `yarn` ir buscar pacotes na internet atraves de um proxy, use a seguinte linha de comando:
 ```bash
 yarn config set proxy http://nome_usuario:senha@endereco_ip:porta
 yarn config set https-proxy http://nome_usuario:senha@endereco_ip:porta
@@ -72,7 +72,7 @@ yarn config set https-proxy http://nome_usuario:senha@endereco_ip:porta
 
 # 3. Python
 ### 3.1 Ferramenta pip
-Para fazer a ferramenta 'pip' buscar modulos python na internet atraves de um proxy, utilize a sguinte linha de comando:
+Para fazer a ferramenta `pip` buscar modulos python na internet atraves de um proxy, utilize a sguinte linha de comando:
 ```bash
 #para http
 python -m pip install --proxy http://nome_usuario:senha@endereco_ip:porta numpy
@@ -82,7 +82,7 @@ python -m pip install --proxy https://nome_usuario:senha@endereco_ip:porta numpy
 
 # 4. Ferramentas autonomas ou nao relacionadas a um Framework ou linuguagem especificos
 ### 4.1 GIT
-Voce pode definir o endereço de proxy para a ferramenta git a partir da linha de comando.
+Voce pode definir o endereço de proxy para a ferramenta `git` a partir da linha de comando.
 ```bash
 # Usando a linha de comando para proxy http
 git config --global http.proxy http://nome_usuario:senha@endereco_ip:porta
