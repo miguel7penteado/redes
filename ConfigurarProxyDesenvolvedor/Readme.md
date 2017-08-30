@@ -1,5 +1,5 @@
 # Proxy Corporativo para Linguagens de Programaçao
-Configurando o proxy para ferramentas de linguagens de programaçao OpenSource, especialmente quando voce eh um cara macho e nao usa IDEs.
+Configurando o proxy para ferramentas de linguagens de programaçao OpenSource, caso comum quando voce eh aquele cabra macho e nao eh dependente de `IDE`s.
 
 # 0. Introduçao
 Normalmente, as aplicaçoes oriundas do Linux (talvez seja uma pratica em todo universo POSIX) procuram o caminho do proxy em 3 **variaves de ambiente** definidas previamente no shell que ira executar a ferramenta:
