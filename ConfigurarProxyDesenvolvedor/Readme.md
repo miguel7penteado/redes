@@ -6,6 +6,7 @@ Normalmente, as aplicaçoes oriundas do Linux (talvez seja uma pratica em todo u
 * 1. 'HTTP_PROXY' - Caminho do proxy utilizado em chamdas via protocolo **http**.
 * 2. 'HTTPS_PROXY' - Caminho do proxy utilizado em chamdas via protocolo **https**.
 * 3. 'FTP_PROXY' - Caminho do proxy utilizado em chamdas via protocolo **ftp**.
+
 Mas com o advento de linguagens que acompanham um frameworks e suas ferramentas, tais como java, javascript e python, a forma de definir o endereço de um servidor proxy ficou relativa a cada uma delas. A seguir temos um resumo.
 
 # 1. JAVA
