@@ -48,5 +48,21 @@ systemProp.https.nonProxyHosts=local.net|some.host.com
 
 # 3. Python
 
+# 4. GIT
+Voce pode definir o endereço de proxy para a ferramenta git a partir da linha de comando.
+```bash
+# Usando a linha de comando para proxy http
+git config --global http.proxy http://nome_usuario:senha@endereco_ip:porta
+# Usando a linha de comando para proxy https
+git config --global https.proxy http://nome_usuario:senha@endereco_ip:porta
+```
+Voce tambem pode cadastrar o endereço do proxy para seu usuario, inserindo os valores diretamente no arquivo de configuraçao `~/.gitconfig` que deve estar (ou ser criado) dentro do seu diretorio de usuario:
+```xml
+[http]
+        proxy = http://nome_usuario:senha@endereco_ip:porta
+[https]
+        proxy = http://nome_usuario:senha@endereco_ip:porta
+```
+
 # Referencias Bibliograficas
 [JHipster - http://www.jhipster.tech/configuring-a-corporate-proxy/](http://www.jhipster.tech/configuring-a-corporate-proxy/)
