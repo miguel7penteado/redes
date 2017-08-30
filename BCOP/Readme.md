@@ -31,3 +31,5 @@
 
 
 ###2017/08/01
+# Referencias:
+[BCOP - NIC.Br](http://moodle.saladeaula.nic.br/course/view.php?id=13)
