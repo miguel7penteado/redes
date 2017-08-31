@@ -1,9 +1,9 @@
 # Ferramentas Extras
 
-*- NTP
-*- IETF
-*- bug-ibgp-mkt
-*- DNS_Reverso
+*. - NTP
+*. - IETF
+*. - bug-ibgp-mkt
+*. - DNS_Reverso
 
 *- [Video Nivelamento DNS https://www.youtube.com/watch?v=cRneZs9Lvno](https://www.youtube.com/watch?v=cRneZs9Lvno)
 *- [Video IETF](https://www.youtube.com/watch?v=ZXHmXyFFKLU)
