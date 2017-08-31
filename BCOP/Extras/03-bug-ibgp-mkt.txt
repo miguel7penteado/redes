@@ -1,0 +1,21 @@
+mikrotik_borda:
+
+/routing filter
+add chain=BUG-IBGP-MKT-IPV6 set-in-nexthop-ipv6=4D0C:XX:0:3::6,4D0C:XX:0:4::A,4D0C:XX:0:1::2
+
+/routing bgp peer
+set IBGP-IPV6-CISCO in-filter=BUG-IBGP-MKT-IPV6
+set IBGP-IPV6-JUNIPER in-filter=BUG-IBGP-MKT-IPV6
+set IBGP-IPV6-MKT-CLIENTES in-filter=BUG-IBGP-MKT-IPV6
+
+----------------------------------------------
+
+mikrotik_clientes:
+
+/routing filter
+add chain=BUG-IBGP-MKT-IPV6 set-in-nexthop-ipv6=4D0C:XX:0:1::1,4D0C:XX:0:5::E
+
+/routing bgp peer
+set IBGP-IPV6-CISCO in-filter=BUG-IBGP-MKT-IPV6
+set IBGP-IPV6-MKT-BORDA in-filter=BUG-IBGP-MKT-IPV6
+set IBGP-IPV6-JUNIPER in-filter=BUG-IBGP-MKT-IPV6
