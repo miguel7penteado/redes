@@ -1,7 +1,7 @@
 # 9. Segurança
 
 ### 9.1 Tratamento de Incidentes
-
+* 1. [Tratamento de Incidentes](https://github.com/miguel7penteado/redes/blob/master/BCOP/9_Seguran%C3%A7a/01-Tratamento_Incidentes.pdf)
 ### 9.2 Tratamento do Google para Sites
 
 Neste caso, vamos fazer o teste do **site do NIC.Br**
