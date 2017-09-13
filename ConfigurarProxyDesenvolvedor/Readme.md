@@ -81,7 +81,7 @@ python -m pip install --proxy https://nome_usuario:senha@endereco_ip:porta numpy
 ```
 
 # 4. Ferramentas autonomas ou nao relacionadas a um Framework ou linuguagem especificos
-### 4.1 GIT
+### 4.1 GIT - Selecionar um proxy
 Voce pode definir o endereço de proxy para a ferramenta `git` a partir da linha de comando.
 ```bash
 # Usando a linha de comando para proxy http
@@ -96,6 +96,40 @@ Voce tambem pode cadastrar o endereço do proxy para seu usuario, inserindo os v
 [https]
         proxy = http://nome_usuario:senha@endereco_ip:porta
 ```
+### 4.2 GIT - excluir o proxy
+Você também pode precisar remover do git as configurações de uso seu proxy da rede por motivos especificos
+
+Metodo padrão: excluindo amigavelmente 
+```bash
+# afeta todos os usuarios
+git config --global --unset https.proxy
+git config --global --unset http.proxy
+git config --global --unset https.proxy
+# afeta apenas o usuario local
+git config --local --unset https.proxy
+git config --local --unset http.proxy
+git config --local --unset https.proxy
+```
+Metodo 2 : Caso não funcione o método anterior, sua instalação de git pode ter fixado o proxy nos arquivos de configuração. Não se preocupe, faça o seguinte:
+
+Linux
+```bash
+export GIT_TRACE=1
+export GIT_CURL_VERBOSE=1
+```
+windows
+```cmd
+set GIT_TRACE=1
+set GIT_CURL_VERBOSE=1
+```
+
+```bash
+# descubra onde esta o arquivo de configuracao do git
+git config --list --show-origin
+```
+Edite o arquivo mostrado ( por exemplo gitconfig) e exclua a linha que contem o endereço de proxy
 
 # Referencias Bibliograficas
 [JHipster - http://www.jhipster.tech/configuring-a-corporate-proxy/](http://www.jhipster.tech/configuring-a-corporate-proxy/)
+[msysgit - Git-and-Proxy-Servers](https://github.com/msysgit/msysgit/wiki/Git-and-Proxy-Servers)
+[StackoverFlow - Remove git proxy](https://stackoverflow.com/questions/32268986/git-how-to-remove-proxy)
